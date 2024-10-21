@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+p > b {
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar > .logo {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+.navbar .logo img {
+  width: 80px;
+}
+.navbar h1 {
+  font-weight: bolder;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 41.45px;
+  text-align: left;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  height: 20px;
+}
+
+.navbar-icons a {
+  font-size: 18px;
+}
+
+.cart-section {
+  position: relative;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+.cart-section > .img-container {
+  background: url("/Asset/Rectangle\ 1.png") no-repeat center;
+  height: 316px;
+  max-width: 1440px;
+  width: 100%;
+}
+.cart-section > .bg-overlay {
+  position: absolute;
+  top: 30px;
+  height: 316px;
+}
+
+.cart-header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cart-header img {
+  width: 60px;
+}
+
+.cart-header h1 {
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+.cart-header p {
+  margin-top: 0;
+  color: #777;
+  font-size: 14px;
+}
+.cart-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cart-container .table-data {
+  width: 100%;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f9f1e7;
+  text-align: left;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.cart-table td > input {
+  padding: 0;
+  text-align: center;
+  max-width: 20px;
+}
+.remove-btn {
+  border: none;
+  background: none;
+}
+.remove-btn :hover {
+  cursor: pointer;
+}
+
+.cart-table th {
+  background-color: #f9f1e7;
+}
+
+.cart-table .product-info {
+  display: flex;
+  align-items: center;
+}
+
+.cart-table .product-info img {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.cart-totals {
+  width: 25%;
+  padding: 20px;
+  background-color: #f9f1e7;
+  border-radius: 5px;
+
+  border: 1px solid #ddd;
+}
+
+.cart-totals h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-totals p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f3c693;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* General Footer Features Styling */
+.footer-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f7f2eb;
+  border-top: 1px solid #e6ded7;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  max-width: 200px;
+}
+
+.feature img {
+  width: 30px;
+  height: 30px;
+}
+
+.feature p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+.feature small {
+  font-size: 11px;
+  color: #6d6b6bc9;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .footer-features {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .feature {
+    margin-bottom: 20px;
+  }
+}
